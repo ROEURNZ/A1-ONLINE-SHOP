@@ -1,4 +1,3 @@
-@import "./components/nav";
 
 *{
     margin: 0;padding: 0;
@@ -7,3 +6,6 @@
 body{
     background-color:$dark-blue ;
 }
+
+@import "./components/nav";
+@import "./components/footer";
