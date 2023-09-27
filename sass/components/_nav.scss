@@ -1,13 +1,14 @@
-
+@import "variables";
 .aside{
     padding: 10px;
     background-color:#33A5D6 ;
     text-align: center;
+    color: #fff;
 }
 nav{
     height:90px;
     display: flex;
-    background-color: #CEF1F1; 
+    background-color:$dark-blue; 
     border-bottom:2px solid rgb(199, 199, 199);
     .nav-left{
         flex: 0.4;
@@ -58,10 +59,10 @@ nav{
             padding: 10px 50px;
             border-radius: 10px;
             border: 1.5px solid #33A5D6;
-            background-color: #CEF1F1;
+            background-color:$dark-blue;
         }
         input[type=text]:hover{
-            background-color: #fff;
+            background-color:$white-color;
         }
         #search-icon{
             margin-left: -2rem;

@@ -9,6 +9,7 @@ body{
     padding: 10px;
     background-color:#33A5D6 ;
     text-align: center;
+    color: #fff;
 }
 nav{
     height:90px;
@@ -94,9 +95,9 @@ nav{
 .type-food {
     height: 60vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     text-align: center;
+    flex-direction: column;
     background-color: #33c7ae;
 }
 .type-food h2{
