@@ -66,6 +66,11 @@
                 border:1px solid $gold-color;
                 background-color:$gold-color;
             }
+            .gp-button button:hover{
+                background-color: #dfdccc28;
+                border:2px solid $gold-color;
+            
+            }
             .icon-1{
                 font-size: 40px;
                 color: $gold-color;

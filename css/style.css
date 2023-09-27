@@ -54,6 +54,7 @@ nav{
 .nav-center li a:hover{
     padding: 10px 30px;
     border-radius: 10px;
+    color: #fff;
     background: #33A5D6;
 }
 .nav-right{
@@ -226,6 +227,7 @@ nav{
 .gp-icon{
     color: #FFD700;
 }
+
 .bottom .gp-button button{
     padding: 0.5px 20px;
     border-radius: 10px;
@@ -238,6 +240,11 @@ nav{
 .gp-button .icon-1{
     font-size: 40px;
     color: #FFD700;
+}
+.gp-button button:hover{
+    background-color: #dfdccc28;
+    border:2px solid #FFD700;
+
 }
 /* ______________________________________ */
 .group-card .row-2{
