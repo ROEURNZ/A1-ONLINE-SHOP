@@ -1,5 +1,97 @@
+
+// @import "variables";
+// .aside{
+//     padding: 10px;
+//     background-color:#33A5D6 ;
+//     text-align: center;
+//     color: #fff;
+// }
+// nav{
+//     height:90px;
+//     display: flex;
+//     background-color:$dark-blue; 
+//     border-bottom:2px solid rgb(199, 199, 199);
+//     .nav-left{
+//         flex: 0.4;
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//         /* background-color: rgb(131, 87, 87); */
+//         .toggle{
+//             display: none !important;
+//             background-color: rebeccapurple
+//         }
+//         .logo img{
+//             height: 80px;
+//             border-radius: 20px;
+//         }
+//     }
+//     .nav-center{
+//         flex: 0.8;
+//         display: flex;
+//         justify-content: center;
+//         /* background-color: rgb(87, 131, 131); */
+//         ul{
+//             display: flex;
+//             align-items: center;
+//             gap: 60px;
+//             list-style: none;
+//             li a{
+//                 color: $white-color;
+//                 text-align: center;
+//                 font-size: 20px;
+//                 font-weight: 200;
+//                 text-decoration: none;
+//                 a:hover{
+//                     padding: 10px 30px;
+//                     border-radius: 10px;
+//                     background: #33A5D6;
+//                 }
+//             }
+//         }
+//     }
+//     .nav-right{
+//         flex: 1;
+//         display: flex;
+//         align-items: center;
+//         justify-content: space-evenly;
+//         /* background-color: rgb(182, 71, 176); */
+//         input[type=text]{
+//             padding: 10px 50px;
+//             border-radius: 10px;
+//             border: 1.5px solid #33A5D6;
+//             background-color:$dark-blue;
+//         }
+//         input[type=text]:hover{
+//             background-color:$white-color;
+//         }
+//         #search-icon{
+//             margin-left: -2rem;
+//             color: #33A5D6;
+//         }
+//         .country{
+//             padding: 5px 20px;
+//             font-size: 12px;
+//             border-radius: 8px;
+//             border: 1px solid #dfdfdf;
+//         }
+//         .country:hover{
+//             border: 1.5px solid #33A5D6;
+            
+//         }
+//         .fa:hover{
+//             color:#33A5D6;
+//         }
+//     }
+// }
+
+
+
+
+
 @import "./group-mixin";
-@import "./Variables";
+@import "./variables";
+
 
 body {
     background-color:white;
@@ -131,4 +223,3 @@ nav {
         }
     }
 }
-
