@@ -1,0 +1,96 @@
+@import "./components/Variables";
+@import "./components/group-mixin";
+
+.foot-container {
+    height: 300px;
+    padding: 60px 75px;
+    background-color:$black-blue;
+
+    .foot-top {
+        height: 250px;
+        display: flex;
+        border-bottom: 2px solid $white-color;
+        h2{
+            color: $gold-color;
+        }
+
+        .text-left {
+            flex: 1;
+            img {
+                height: 80px;
+                margin-bottom: 25px;
+            }
+            .text-page {
+                h2 {
+                    padding-bottom: 25px;
+                }
+
+                p {
+                    font-size: 18px;
+                    color: $white-color;
+                }
+            }
+        }
+
+        .text-right {
+            flex: 1.5;
+            display: flex;
+            justify-content: space-around;
+            padding-top: 20px;
+         
+            ul {
+
+                .text-bold {
+                    font-weight: bold;
+                    font-size: 20px;
+                    color: $white-color;
+                    padding-bottom: 20px;
+
+                }
+
+                li {
+                    list-style: none;
+                    margin-top: 20px;
+
+                    p {
+                        padding-bottom: 10px;
+                        font-size: 17px;
+                        color: $white-color;
+                    }
+
+                    i {
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .foot-bottom {
+        height: 100px;
+        display: flex;
+       
+        .left-bottom{
+            flex: 1;
+            @include centered;
+            align-items: start;
+            flex-direction: column;
+            p{
+                padding-bottom: 10px;
+                color: $white-color;
+            }
+        }
+        .right-bottom{
+            flex: 1;
+            @include centered;
+            justify-content: end;
+    
+           img{
+            height: 40px;
+            border-radius: 25px;
+            margin-left: 25px;
+           }
+        }
+    }
+
+}
