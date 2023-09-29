@@ -1,3 +1,6 @@
+@import "./components/header";
+@import  "./components/card";
+@import "./components/Variables";
 
 @import "./components/nav";
 @import "./components/card";
@@ -6,9 +9,3 @@
     margin: 0;padding: 0;
     font-family: sans-serif;
 }
-body{
-    background-color:$dark-blue ;
-}
-
-@import "./components/nav";
-@import "./components/footer";

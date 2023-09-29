@@ -1,17 +1,83 @@
+// @import "/sass/main.scss";
+@import "./group-mixin";
+@import "./Variables";
+@import "./header";
 
+body{
+    background-color:$dark-blue ;
+}
+.type-food {
+    height: 400px;
+    @include centered;
+    flex-direction: column;
+    background-color: #33c7ae;
+    margin-top: 70px;
+    h2 {
+        color: $white-color;
+        padding-bottom: 20px;
+        padding-right: 20%;
+        font-size: 40px;
+    }
+}
 
-
-
-.group-card{
-    height: 210vh;
+.link-foods {
+    padding: 50px 0;
     margin-left: 50px;
     margin-right: 50px;
-    /* display: flex; */
-    /* background-color: blue; */
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+
+        .dropbtn {
+            background-color: #33A5D6;
+            color: $white-color;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+
+        a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+
+    }
+
+    .dropdown-content a:hover {
+        background-color: #f1f1f1
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+
+        .dropdown:hover .dropbtn {
+            background-color: #33A5D6;
+        }
+    }
+}
+.group-card{
+    height: 175vh;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 .group-card .row-1,.group-card .row-2,.group-card .row-3 {
    @include highlight-card;
-    /* background-color: #cc311c; */
+   
 }
 .row-item1,
 .row-item2,
@@ -22,7 +88,6 @@
     height:350px;
     display: flex;
     flex-direction: column;
-    /* background-color: #b83ba3; */
     box-shadow: 0.2px 0.2px 8px 0.2px;
     border-radius: 30px;
     .top{
@@ -41,8 +106,9 @@
         background:$black-blue;
         .title{
             text-align: center;
-            padding-top: 5.5px;
+            padding-top: 15px;
             color: $white-color;
+            
         }
         .icon-num{
             padding: 25px;
@@ -53,9 +119,13 @@
             }
             h3{
                 color:$white-color;
+                
             }
         }
         .gp-button{
+            display: flex;
+            gap: 20%;
+            justify-content: space-around;
             button{
                 padding: 0.5px 20px;
                 border-radius: 10px;
@@ -64,8 +134,10 @@
                 font-weight: 600;
                 border:1px solid $gold-color;
                 background-color:$gold-color;
+                
             }
-            .gp-button button:hover{
+        
+            button:hover{
                 background-color: #dfdccc28;
                 border:2px solid $gold-color;
             
@@ -80,5 +152,5 @@
     }
 }
 
-/* ___________footer_________________ */
+
 
