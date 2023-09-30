@@ -1,6 +1,6 @@
 $breakpoints: (
-    'mobile': 320px,
-    'tablet': 834px
+    'mobile': 500px,
+    'tablet': 884px
 );
 
 @mixin responsive($key) {
