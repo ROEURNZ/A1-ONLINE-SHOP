@@ -780,7 +780,10 @@ nav .nav-right .btn-group .fa:hover {
 
 @media screen and (max-width: 884px) {
   .cover_background {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 @media screen and (max-width: 500px) {
@@ -794,18 +797,6 @@ nav .nav-right .btn-group .fa:hover {
   color: #fff;
 }
 
-<<<<<<< HEAD
-form {
-  width: 500px;
-  height: 450px;
-  background-color: rgba(0, 0, 0, 0.404);
-  border: 2px solid #fff;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 20px;
-  padding: 40px;
-  margin-bottom: 40px;
-=======
 @media screen and (max-width: 500px) {
   .cover_background h1 {
     display: none;
@@ -822,7 +813,6 @@ form {
     margin-top: 20px;
     border-radius: 10px;
   }
->>>>>>> 6c4126539b0c54d5a1e0d912ceb632c54cb973ea
 }
 form {
   width: 500px;
@@ -1167,8 +1157,13 @@ textarea:focus::placeholder {
 }
 @media screen and (max-width: 500px) {
   .information .discription {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     font-size: 13px;
   }
 }
@@ -1177,6 +1172,8 @@ textarea:focus::placeholder {
 }
 @media screen and (max-width: 884px) {
   .information .discription * {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
 }
@@ -1230,8 +1227,13 @@ textarea:focus::placeholder {
 }
 @media screen and (max-width: 500px) {
   .information {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     height: 250px;
   }
 }/*# sourceMappingURL=Register.css.map */
