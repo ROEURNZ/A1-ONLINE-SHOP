@@ -5,8 +5,6 @@
 }
 .foot-container .foot-top {
   height: 250px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   border-bottom: 2px solid #fff;
 }
@@ -14,9 +12,7 @@
   color: #FFD700;
 }
 .foot-container .foot-top .text-left {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
 }
 .foot-container .foot-top .text-left img {
   height: 80px;
@@ -30,14 +26,9 @@
   color: #fff;
 }
 .foot-container .foot-top .text-right {
-  -webkit-box-flex: 1.5;
-      -ms-flex: 1.5;
-          flex: 1.5;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  flex: 1.5;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   padding-top: 20px;
 }
 .foot-container .foot-top .text-right ul .text-bold {
@@ -60,51 +51,26 @@
 }
 .foot-container .foot-bottom {
   height: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 .foot-container .foot-bottom .left-bottom {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  flex: 1;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
 }
 .foot-container .foot-bottom .left-bottom p {
   padding-bottom: 10px;
   color: #fff;
 }
 .foot-container .foot-bottom .right-bottom {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  flex: 1;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  align-items: center;
+  justify-content: center;
+  justify-content: end;
 }
 .foot-container .foot-bottom .right-bottom img {
   height: 40px;

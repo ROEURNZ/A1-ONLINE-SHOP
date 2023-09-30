@@ -764,7 +764,7 @@ nav .nav-right .btn-group .fa:hover {
 .cover_background {
   margin-top: 120px;
   width: 100%;
-  height: 550px;
+  height: 530px;
   background: url(../images/supermarket.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -779,6 +779,11 @@ nav .nav-right .btn-group .fa:hover {
           align-items: center;
 }
 
+@media screen and (max-width: 500px) {
+  .cover_background {
+    height: 400px;
+  }
+}
 form {
   width: 500px;
   height: 450px;
@@ -790,6 +795,13 @@ form {
   padding: 40px;
 }
 
+@media screen and (max-width: 500px) {
+  form {
+    width: 250px;
+    height: 280px;
+    padding: 30px;
+  }
+}
 form * {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -809,6 +821,11 @@ form h1 {
   border: none;
 }
 
+@media screen and (max-width: 500px) {
+  form h1 {
+    font-size: 15px;
+  }
+}
 .input_email,
 .input_password,
 .sign_up,
@@ -817,6 +834,15 @@ form h1 {
   height: 40px;
 }
 
+@media screen and (max-width: 500px) {
+  .input_email,
+  .input_password,
+  .sign_up,
+  .login_google {
+    height: 20px;
+    margin-top: 20px;
+  }
+}
 .input_email input,
 .input_password input {
   width: 100%;
@@ -825,6 +851,12 @@ form h1 {
   border: none;
 }
 
+@media screen and (max-width: 500px) {
+  .input_email input,
+  .input_password input {
+    font-size: 10px;
+  }
+}
 .input_email,
 .input_password {
   border: 2px solid #fff;
@@ -848,12 +880,17 @@ form h1 {
   width: 30px;
 }
 
-.input_message {
-  border: 2px solid #fff;
-  height: 80px;
-  margin-top: 20px;
+.input_email i.bx,
+.input_password i.bx {
+  font-size: 20px;
 }
 
+@media screen and (max-width: 500px) {
+  .input_email i.bx,
+  .input_password i.bx {
+    font-size: 10px;
+  }
+}
 .sign_up {
   border: 2px solid #fff;
   background-color: transparent;
@@ -883,6 +920,11 @@ form h1 {
   cursor: pointer;
 }
 
+@media screen and (max-width: 500px) {
+  .sign_up button {
+    font-size: 10px;
+  }
+}
 .login_google {
   background-color: rgba(255, 255, 255, 0.7137254902);
   border: none;
@@ -913,6 +955,12 @@ form h1 {
   border: none;
 }
 
+@media screen and (max-width: 500px) {
+  .login_google button img {
+    width: 15px;
+    height: 15px;
+  }
+}
 .login_google button span {
   width: 350px;
   font-size: 20px;
@@ -929,6 +977,12 @@ form h1 {
   text-align: center;
 }
 
+@media screen and (max-width: 500px) {
+  .login_google button span {
+    font-size: 10px;
+    margin-left: -100px;
+  }
+}
 .login_acc {
   margin-top: 20px;
   font-size: 20px;
@@ -941,6 +995,11 @@ form h1 {
   color: #fff;
 }
 
+@media screen and (max-width: 500px) {
+  .login_acc {
+    font-size: 10px;
+  }
+}
 .login_acc,
 .login_acc * {
   border: none;
@@ -1031,9 +1090,40 @@ input:focus::placeholder {
 .information .discription h1 {
   margin-top: 30px;
 }
+@media screen and (max-width: 500px) {
+  .information .discription h1 {
+    margin-top: 18px;
+    margin-left: 15px;
+  }
+}
 .information .discription i {
   margin-right: 10px;
   font-size: 25px;
+}
+@media screen and (max-width: 500px) {
+  .information .discription i {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .information .discription {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+  }
+}
+.information .discription * {
+  margin-top: 10px;
+}
+@media screen and (max-width: 884px) {
+  .information .discription * {
+    display: flex;
+  }
+}
+@media screen and (max-width: 500px) {
+  .information .discription * {
+    margin-top: 5px;
+  }
 }
 .information .map {
   -webkit-box-flex: 1.3;
@@ -1057,6 +1147,31 @@ input:focus::placeholder {
   -webkit-box-shadow: 0.2px 0.1px 8px 0.2px;
           box-shadow: 0.2px 0.1px 8px 0.2px;
 }
-.information .discription * {
-  margin-top: 15px;
+@media screen and (max-width: 884px) {
+  .information .map iframe {
+    width: 350px;
+    height: 250px;
+    margin-left: 30px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .information .map iframe {
+    width: 300px;
+    height: 150px;
+    margin: 15px;
+  }
+}
+
+@media screen and (max-width: 884px) {
+  .information {
+    height: 220px;
+    padding: 50px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .information {
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+  }
 }/*# sourceMappingURL=login.css.map */
