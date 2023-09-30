@@ -1,6 +1,6 @@
 // @import "/sass/main.scss";
 @import "./group-mixin";
-@import "./Variables";
+@import "./variables";
 @import "./header";
 
 body{
@@ -21,9 +21,13 @@ body{
 }
 
 .link-foods {
-    padding: 50px 0;
+    width: 100%;
+    padding: 40px 0;
     margin-left: 50px;
+    // margin-top: 400px;
     margin-right: 50px;
+    // background-color: #c76933;
+    
 
     .dropdown {
         position: relative;
@@ -33,10 +37,14 @@ body{
             background-color: #33A5D6;
             color: $white-color;
             padding: 10px;
-            font-size: 16px;
+            font-size: 20px;
             border: none;
             border-radius: 10px;
             cursor: pointer;
+            // position: fixed;
+            // z-index: 1;
+            // top: 7.5rem;
+            // margin-top:-20px;
         }
     }
 
@@ -74,6 +82,7 @@ body{
     height: 175vh;
     margin-left: 50px;
     margin-right: 50px;
+    margin-top: 20px;
 }
 .group-card .row-1,.group-card .row-2,.group-card .row-3 {
    @include highlight-card;
