@@ -209,13 +209,13 @@ body {
 }
 
 .type-food {
-  height: 400px;
+  height: 450px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   background-color: #33c7ae;
-  margin-top: 70px;
+  margin-top: 110px;
 }
 .type-food h2 {
   color: #fff;
@@ -268,7 +268,7 @@ body {
 }
 
 .group-card {
-  height: 175vh;
+  height: 170vh;
   margin-left: 50px;
   margin-right: 50px;
   margin-top: 20px;
@@ -286,7 +286,7 @@ body {
 .row-item4,
 .row-item5 {
   width: 230px;
-  height: 350px;
+  height: 335px;
   display: flex;
   flex-direction: column;
   box-shadow: 0.2px 0.2px 8px 0.2px;
@@ -361,16 +361,18 @@ body {
   display: flex;
   gap: 20%;
   justify-content: space-around;
+  align-items: center;
 }
 .row-item1 .bottom .gp-button button,
 .row-item2 .bottom .gp-button button,
 .row-item3 .bottom .gp-button button,
 .row-item4 .bottom .gp-button button,
 .row-item5 .bottom .gp-button button {
-  padding: 0.5px 20px;
+  width: 70px;
+  height: 35px;
   border-radius: 10px;
   color: #fff;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 600;
   border: 1px solid #FFD700;
   background-color: #FFD700;
@@ -388,7 +390,7 @@ body {
 .row-item3 .bottom .gp-button .icon-1,
 .row-item4 .bottom .gp-button .icon-1,
 .row-item5 .bottom .gp-button .icon-1 {
-  font-size: 40px;
+  font-size: 35px;
   color: #FFD700;
 }
 

@@ -7,11 +7,11 @@ body{
     background-color:$dark-blue ;
 }
 .type-food {
-    height: 400px;
+    height: 450px;
     @include centered;
     flex-direction: column;
     background-color: #33c7ae;
-    margin-top: 70px;
+    margin-top: 110px;
     h2 {
         color: $white-color;
         padding-bottom: 20px;
@@ -79,22 +79,27 @@ body{
     }
 }
 .group-card{
-    height: 175vh;
+    height: 170vh;
     margin-left: 50px;
     margin-right: 50px;
     margin-top: 20px;
+
 }
 .group-card .row-1,.group-card .row-2,.group-card .row-3 {
    @include highlight-card;
+
+
    
 }
+
+
 .row-item1,
 .row-item2,
 .row-item3,
 .row-item4,
 .row-item5 {
     width:230px;
-    height:350px;
+    height:335px;
     display: flex;
     flex-direction: column;
     box-shadow: 0.2px 0.2px 8px 0.2px;
@@ -135,11 +140,13 @@ body{
             display: flex;
             gap: 20%;
             justify-content: space-around;
+            align-items: center;
             button{
-                padding: 0.5px 20px;
+                width: 70px;
+                height: 35px;
                 border-radius: 10px;
                 color: $white-color;
-                font-size: 20px;
+                font-size: 15px;
                 font-weight: 600;
                 border:1px solid $gold-color;
                 background-color:$gold-color;
@@ -152,7 +159,7 @@ body{
             
             }
             .icon-1{
-                font-size: 40px;
+                font-size: 35px;
                 color: $gold-color;
             }
 
