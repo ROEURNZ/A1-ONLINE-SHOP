@@ -6,20 +6,42 @@
 body{
     background-color:$dark-blue ;
 }
-.type-food {
+.type-food1,.type-food2,.type-food3,.type-food4,.type-food5 {
     height: 450px;
     @include centered;
     flex-direction: column;
-    background-color: #33c7ae;
     margin-top: 110px;
-    h2 {
-        color: $white-color;
-        padding-bottom: 20px;
-        padding-right: 20%;
-        font-size: 40px;
+    color: $white-color;
+    .bg-black{
+        background-color: black;
+        h2 {
+            padding-bottom: 20px;
+            padding-right: 20%;
+            font-size: 40px;
+        }
     }
 }
+.type-food1{
+    background: url(/images/kiten.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.type-food2{
+    background-color: #33c7ae;
 
+}
+.type-food3{
+    background-color: #33c7ae;
+
+}
+.type-food4{
+    background-color: #33c7ae;
+
+}
+.type-food5{
+    background-color: #33c7ae;
+
+}
 .link-foods {
     width: 100%;
     padding: 40px 0;

@@ -208,20 +208,44 @@ body {
   background-color: #CEF1F1;
 }
 
-.type-food {
+.type-food1, .type-food2, .type-food3, .type-food4, .type-food5 {
   height: 450px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: #33c7ae;
   margin-top: 110px;
-}
-.type-food h2 {
   color: #fff;
+}
+.type-food1 .bg-black, .type-food2 .bg-black, .type-food3 .bg-black, .type-food4 .bg-black, .type-food5 .bg-black {
+  background-color: black;
+}
+.type-food1 .bg-black h2, .type-food2 .bg-black h2, .type-food3 .bg-black h2, .type-food4 .bg-black h2, .type-food5 .bg-black h2 {
   padding-bottom: 20px;
   padding-right: 20%;
   font-size: 40px;
+}
+
+.type-food1 {
+  background: url(/images/kiten.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.type-food2 {
+  background-color: #33c7ae;
+}
+
+.type-food3 {
+  background-color: #33c7ae;
+}
+
+.type-food4 {
+  background-color: #33c7ae;
+}
+
+.type-food5 {
+  background-color: #33c7ae;
 }
 
 .link-foods {
@@ -405,14 +429,10 @@ body {
   padding: 60px 75px;
   background-color: #344D84;
 }
-@media screen and (max-width: 830px) {
-  .foot-container {
-    padding: 60px;
-  }
-}
 .foot-container .foot-top {
   height: 250px;
   display: flex;
+  flex-direction: row;
   border-bottom: 2px solid #fff;
 }
 .foot-container .foot-top h2 {
