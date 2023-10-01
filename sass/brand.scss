@@ -1,6 +1,11 @@
+<<<<<<< HEAD
 // @import "main";
+=======
+>>>>>>> 9d036f4d5b6ecb9876ec41bb7af3d9f9d3c5892d
 
+@import "./components/header";
 
+<<<<<<< HEAD
 $size-width: 500px;
 $size-height: 300px;
 
@@ -33,49 +38,16 @@ $size-height: 300px;
     align-items: center;
 
     .top-products {
+=======
+.main-container{
+     margin-top: 120px;
+}
+.photo{
+    img{
+>>>>>>> 9d036f4d5b6ecb9876ec41bb7af3d9f9d3c5892d
         width: 100%;
-        height: 400px;
-        border-radius: 12px;
-
-        .brand-pic {
-            height: 240px;
-            width: 100%;
-            background: #ffffff;
-            display: flex;
-            align-items: center;
-            gap: 18px;
-
-            .banner-pics {
-                height: 220px;
-                margin-left: 15px;
-                display: flex;
-                flex-direction: column;
-                gap: 18px;
-
-
-                img {
-                    width: 100px;
-                    height: 100px;
-                    border-radius: 12px;
-                    box-shadow: 5px 5px 25px 0px rgba(46, 61, 73, 0.379);
-                }
-            }
-
-            .main-image {
-                width: 450px;
-                height: 200px;
-                display: flex;
-                align-items: center;
-
-                img {
-                    height: 220px;
-                    width: 410px;
-                    border-radius: 12px;
-                    box-shadow: 5px 5px 25px 0px rgba(62, 79, 93, 0.363);
-                }
-            }
-        }
     }
+<<<<<<< HEAD
 
 
     .brand-detail {
@@ -148,11 +120,19 @@ $size-height: 300px;
     display: flex;
     justify-content: space-between;
     gap: 10px;
+=======
+}
+.link-brand {
+    width: 100%;
+    padding: 40px 0;
+    margin-left: 50px;
+    margin-right: 50px;
+>>>>>>> 9d036f4d5b6ecb9876ec41bb7af3d9f9d3c5892d
 
-    section {
-        width: 90%;
-        height: 100%;
+    .dropdown {
+        position: relative;
         display: flex;
+<<<<<<< HEAD
         justify-content: center;
 
         .brand-card {
@@ -175,15 +155,32 @@ $size-height: 300px;
                     border-radius: 12px;
 
                 }
+=======
+        justify-content: space-between;
+        padding: 10px;
+        width: 90%;
+        .dropbtn {
+            color: black;
+            font-size: 30px;
+            width: 50%;
+>>>>>>> 9d036f4d5b6ecb9876ec41bb7af3d9f9d3c5892d
 
+        }
+        button{
+            background-color: #33A5D6;
+            width: 10%;
+            font-size: 18px;
+            font-weight:bold;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            a{
+               text-decoration: none;
+               color: #f0ecec;
+               
             }
-            .de-image {
-                width: 100%;
-                height: 50%;
-                display: flex;
-                flex-direction: column;
-                align-items: flex-end;
 
+<<<<<<< HEAD
                 .cap-content{
                     width: 100%;
                     height: 70%;
@@ -355,3 +352,23 @@ $size-height: 300px;
         }
     }
 }
+=======
+        }
+    }
+
+}
+.group-Card{
+    height: 170vh;
+    width: 100%;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+
+}
+.group-Card .row-1,.group-card .row-2,.group-card .row-3 {
+    @include highlight-card;
+ 
+ 
+    
+ }
+>>>>>>> 9d036f4d5b6ecb9876ec41bb7af3d9f9d3c5892d

@@ -1,74 +1,179 @@
-
 @import "./group-mixin";
 @import "./variables";
 @import "./header";
+@import "../mixin/responsive";
 
-body{
-    background-color:$dark-blue ;
+body {
+    background-color: $dark-blue ;
 }
-.type-food1,.type-food2,.type-food3,.type-food4,.type-food5 {
+
+@include responsive ('tablet') {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.type-food1,
+.type-food2,
+.type-food3,
+.type-food4,
+.type-food5 {
     height: 450px;
+    width: 100%;
+
     @include centered;
     flex-direction: column;
     margin-top: 110px;
     color: $white-color;
-    .bg-black1,.bg-black2,.bg-black3,.bg-black4,.bg-black5{
+
+    .bg-black1,
+    .bg-black2,
+    .bg-black3,
+    .bg-black4,
+    .bg-black5 {
         background-color: rgba(18, 20, 20, 0.336);
-        h2{
+
+        h2 {
             padding-bottom: 20px;
             font-size: 40px;
         }
-        h4{
+
+        h4 {
             font-size: 18px;
         }
     }
-    .bg-black1{
+
+    .bg-black1 {
         padding: 20px 70px;
         margin-right: 500px;
-        h4{
+
+        h4 {
             margin-left: 35%;
         }
     }
-    .bg-black2,.bg-black3,.bg-black4{
+    
+
+    @include responsive ('tablet') {
+        .bg-black1 {
+            padding: 15px 50px;
+            margin-right: 300px;
+
+            h2 {
+                padding-bottom: 5px;
+                font-size: 25px;
+            }
+
+            h4 {
+                margin-left: 10%;
+                font-size: 15px;
+
+            }
+
+        }
+    }
+
+    .bg-black2,
+    .bg-black3,
+    .bg-black4 {
         height: 20%;
         width: 30%;
         padding: 30px;
-        h4{
+
+        h4 {
             margin-left: 10%;
         }
     }
-    .bg-black5{
+    @include responsive ('tablet') {
+        .bg-black2,.bg-black3,.bg-black4{
+            padding: 13px 50px;
+            margin-left: 200px;
+
+            h2 {
+                padding-bottom: 5px;
+                font-size: 25px;
+            }
+
+            h4 {
+                margin-left: 5%;
+                font-size: 12px;
+
+            }
+    }
+    }
+    .bg-black5 {
         height: 20%;
         width: 40%;
         padding: 30px;
         padding-left: 50px;
-        h4{
+
+        h4 {
             margin-left: 30%;
         }
     }
+    @include responsive ('tablet') {
+        .bg-black5 {
+            padding: 15px 70px;
+            margin-right: 300px;
+
+            h2 {
+                padding-bottom: 5px;
+                font-size: 20px;
+            }
+
+            h4 {
+                margin-left: 10%;
+                font-size: 15px;
+
+            }
+
+        }
+    }
+
 }
-.type-food1{
+
+.type-food1 {
     background: url(/images/kiten1.webp);
     background-repeat: no-repeat;
     background-size: cover;
 }
-.type-food2{
-    background:url(/images/food1.webp);
+
+@include responsive ('tablet') {
+    .type-food1 {
+        margin-top: 130px;
+        width: 100%;
+        height: 200px;
+    }
+}
+
+.type-food2 {
+    background: url(/images/food1.webp);
     background-repeat: no-repeat;
     background-size: cover;
 }
-.type-food3{
-    background-color: #33c7ae;
+@include responsive ('tablet') {
+    .type-food2 {
+        height: 271px;
+    }
+}
+
+.type-food3 {
+    background-image: url(/images/Electronic\ Product.jpg);
+     background-repeat: no-repeat;
+    background-size: cover;
 
 }
-.type-food4{
-    background-color: #33c7ae;
 
+.type-food4 {
+    background-image: url(/images/Study\ Material\ ya.jpg);
 }
-.type-food5{
-    background-color: #33c7ae;
 
+.type-food5 {
+    background-image: url(/images/clothes.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
 .link-foods {
     width: 100%;
     padding: 40px 0;
@@ -112,9 +217,9 @@ body{
 
     .dropdown-content a:hover {
         border-radius: 8px;
-        background-color:$black-blue;
+        background-color: $black-blue;
         color: $white-color;
-        
+
 
     }
 
@@ -126,95 +231,180 @@ body{
         }
     }
 }
-.group-card{
+
+.group-card {
     height: 170vh;
+    width: 100%;
     margin-left: 50px;
     margin-right: 50px;
     margin-top: 20px;
 
 }
-.group-card .row-1,.group-card .row-2,.group-card .row-3 {
-   @include highlight-card;
 
-
-   
+@include responsive ('tablet') {
+    .group-card {
+        height: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+        align-self: center;
+    }
 }
 
+.group-card .row-1,
+.group-card .row-2,
+.group-card .row-3 {
+    @include highlight-card;
+}
+
+@include responsive ('tablet') {
+
+    .group-card .row-1,
+    .group-card .row-2,
+    .group-card .row-3 {
+        height: 310px;
+    }
+}
 
 .row-item1,
 .row-item2,
 .row-item3,
 .row-item4,
 .row-item5 {
-    width:230px;
-    height:335px;
+    width: 230px;
+    height: 335px;
     display: flex;
     flex-direction: column;
     box-shadow: 0.2px 0.2px 8px 0.2px;
     border-radius: 30px;
-    .top{
+
+    .top {
         flex: 1;
         @include centered;
-        border-radius:   30px 30px 0 0;
-        background-color:$white-color;
-        .top-1> img{
+        border-radius: 30px 30px 0 0;
+        background-color: $white-color;
+
+        .top-1>img {
             border-radius: 20px;
-            height: 150px; 
+            height: 150px;
         }
     }
-    .bottom{
+
+    .bottom {
         flex: 1;
-        border-radius: 0 0 30px 30px ;
-        background:$black-blue;
-        .title{
+        border-radius: 0 0 30px 30px;
+        background: $black-blue;
+
+        .title {
             text-align: center;
             padding-top: 15px;
             color: $white-color;
-            
+
         }
-        .icon-num{
+
+        .icon-num {
             padding: 25px;
             display: flex;
             justify-content: space-between;
-            .gp-icon{
+
+            .gp-icon {
                 color: $gold-color;
             }
-            h3{
-                color:$white-color;
-                
+
+            @include responsive ('tablet') {
+                .gp-icon i {
+                    font-size: 10px;
+                }
+
+            }
+
+            h3 {
+                color: $white-color;
+
             }
         }
-        .gp-button{
+
+        @include responsive ('tablet') {
+            .icon-num {
+                padding: 10px;
+            }
+        }
+
+        .gp-button {
             display: flex;
             gap: 20%;
             justify-content: space-around;
             align-items: center;
-            button{
+
+            button {
                 width: 70px;
                 height: 35px;
                 border-radius: 10px;
                 color: $white-color;
                 font-size: 15px;
                 font-weight: 600;
+<<<<<<< HEAD
                 border:1px solid $gold-color;
                 background-color:$gold-color;
-                
+                a{
+                    text-decoration: none;
+                    color: $white-color;
+                }
+=======
+                border: 1px solid $gold-color;
+                background-color: $gold-color;
+
+>>>>>>> 6300d0ab65a0584731cf3c043cc96f88450f08d9
             }
-        
-            button:hover{
+
+            @include responsive ('tablet') {
+                button {
+                    width: 40px;
+                    height: 20px;
+                    border-radius: 10px;
+                    color: $white-color;
+                    font-size: 10px;
+                    font-weight: 600;
+                }
+            }
+
+            button:hover {
                 background-color: #dfdccc28;
-                border:2px solid $gold-color;
-            
+                border: 2px solid $gold-color;
+
             }
-            .icon-1{
+
+            .icon-1 {
                 font-size: 35px;
                 color: $gold-color;
             }
 
         }
-         
+
+    }
+
+    @include responsive ('tablet') {
+        .bottom {
+            padding-bottom: 10px;
+            flex: 0.8;
+        }
     }
 }
 
+@include responsive ('tablet') {
 
+    .row-item1,
+    .row-item2,
+    .row-item3,
+    .row-item4,
+    .row-item5 {
+        width: 163px;
+        height: 250px;
+        margin-left: -11px;
+        box-shadow: none;
 
+    }
+
+    .row-item5 {
+        display: none;
+    }
+}

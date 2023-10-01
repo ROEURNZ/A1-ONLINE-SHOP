@@ -23,6 +23,7 @@
                 height: 80px;
                 margin-bottom: 25px;
             }
+
             .text-page {
                 h2 {
                     padding-bottom: 25px;
@@ -52,6 +53,7 @@
                 margin-left: -30px;
             }
         }
+
         .text-right {
             flex: 1.5;
             display: flex;
@@ -61,12 +63,14 @@
             ul {
 
                 .text-bold {
+                    display: flex;
                     font-weight: bold;
                     font-size: 20px;
                     color: $white-color;
                     padding-bottom: 20px;
 
                 }
+
                 li {
                     list-style: none;
                     margin-top: 20px;
@@ -100,6 +104,7 @@
 
             }
         }
+
         .text-right * {
             margin-right: 10px;
             width: 100%;
@@ -113,6 +118,7 @@
             padding-bottom: 20px;
         }
     }
+
     .foot-bottom {
         height: 100px;
         display: flex;
@@ -133,12 +139,12 @@
             flex: 1;
             @include centered;
             justify-content: end;
-    
-           img{
-            height: 40px;
-            border-radius: 25px;
-            margin-left: 25px;
-           }
+
+            img {
+                height: 40px;
+                border-radius: 25px;
+                margin-left: 25px;
+            }
         }
     }
 
