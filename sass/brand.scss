@@ -4,6 +4,11 @@
 $size-width: 500px;
 $size-height: 300px;
 
+.brand-banner{
+
+  
+}
+
 .brand-contents {
     position: relative;
     margin-top: 180px;
@@ -15,10 +20,7 @@ $size-height: 300px;
     z-index: 0;
 }
 
-.brand-banner{
 
-  
-}
 
 .brand-context {
 
@@ -83,7 +85,6 @@ $size-height: 300px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        // justify-content: space-evenly;
 
         .brand-content {
             margin-top: 6px;
@@ -96,7 +97,7 @@ $size-height: 300px;
                 padding: 15px;
                 height: 100px;
                 width: 35%;
-                // background: #ffffff;
+
 
             }
 
@@ -104,7 +105,7 @@ $size-height: 300px;
                 padding: 15px;
                 height: 100px;
                 width: 65%;
-                // background: #ffffff;
+
                 color: #9a5252;
 
             }
@@ -114,14 +115,13 @@ $size-height: 300px;
             width: 100%;
             height: 60px;
             display: flex;
-            // align-items: end;
 
             .brand-items,
             .brand-customize{
             
                 height: 60px;
                 width: 50%;
-                background: #09daad;
+                background: rgb(201, 185, 185)(201, 185, 185);
                 display: flex;
                 align-items: center;
                 padding-left: 15px;
@@ -157,7 +157,7 @@ $size-height: 300px;
 
             width: 90%;
             height: 360px;
-            background: #ead707;
+            background: #d0d0d0;
             border-radius: 12px;
             display: flex;
             flex-direction: column;
@@ -169,6 +169,10 @@ $size-height: 300px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                img{
+                    border-radius: 12px;
+
+                }
 
             }
             .de-image {
@@ -179,11 +183,21 @@ $size-height: 300px;
                 align-items: flex-end;
 
                 .cap-content{
-                    padding: 10px;
                     width: 100%;
                     height: 70%;
+                    display: flex;
+                    flex-direction: column;
+                   
 
+                    h2 {
+                        align-self: center;
+                        padding: 10px;
+                    }
+                    p{
+                    
+                        text-align: center;
 
+                    }
 
                 }
 
