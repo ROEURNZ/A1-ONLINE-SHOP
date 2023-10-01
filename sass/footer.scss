@@ -1,7 +1,6 @@
 @import "./components/variables";
 @import "./components/group-mixin";
 
-
 .foot-container {
     height: 300px;
     padding: 60px 75px;
@@ -12,7 +11,8 @@
         display: flex;
         flex-direction: row;
         border-bottom: 2px solid $white-color;
-        h2{
+
+        h2 {
             color: $gold-color;
         }
 
@@ -23,7 +23,6 @@
                 height: 80px;
                 margin-bottom: 25px;
             }
-
             .text-page {
                 h2 {
                     padding-bottom: 25px;
@@ -33,9 +32,26 @@
                     font-size: 18px;
                     color: $white-color;
                 }
+
+                @include responsive ('tablet') {
+                    p {
+                        margin-top: -10px;
+                        font-size: 15px;
+                    }
+                }
+
             }
         }
 
+        @include responsive ('tablet') {
+            .text-left {
+                flex: 0.5;
+            }
+
+            .list-sell {
+                margin-left: -30px;
+            }
+        }
         .text-right {
             flex: 1.5;
             display: flex;
@@ -51,7 +67,6 @@
                     padding-bottom: 20px;
 
                 }
-
                 li {
                     list-style: none;
                     margin-top: 20px;
@@ -62,14 +77,42 @@
                         color: $white-color;
                     }
 
+                    @include responsive ('tablet') {
+                        p {
+                            display: flex;
+                            font-size: 15px;
+                        }
+                    }
+
                     i {
                         margin-right: 10px;
                     }
+
+                    @include responsive ('tablet') {
+                        i {
+                            font-size: 15px;
+                            margin-right: 5px;
+                            width: 20px;
+                        }
+                    }
+
                 }
+
             }
+        }
+        .text-right * {
+            margin-right: 10px;
+            width: 100%;
+            margin-right: -5px;
         }
     }
 
+    @include responsive ('tablet') {
+        .foot-top {
+            width: 700px;
+            padding-bottom: 20px;
+        }
+    }
     .foot-bottom {
         height: 100px;
         display: flex;
@@ -90,12 +133,12 @@
             flex: 1;
             @include centered;
             justify-content: end;
-
-            img {
-                height: 40px;
-                border-radius: 25px;
-                margin-left: 25px;
-            }
+    
+           img{
+            height: 40px;
+            border-radius: 25px;
+            margin-left: 25px;
+           }
         }
     }
 

@@ -99,13 +99,6 @@ nav .nav-right .first input[type=text] {
   border: 1.5px solid #33A5D6;
   background-color: #CEF1F1;
 }
-@media screen and (max-width: 884px) {
-  nav .nav-right .first input[type=text] {
-    width: 170px;
-    border-radius: 20px;
-    margin-left: 1rem;
-  }
-}
 nav .nav-right .first input[type=text]:hover {
   background-color: #fff;
 }
@@ -243,13 +236,6 @@ nav .nav-right .first input[type=text] {
   border: 1.5px solid #33A5D6;
   background-color: #CEF1F1;
 }
-@media screen and (max-width: 884px) {
-  nav .nav-right .first input[type=text] {
-    width: 170px;
-    border-radius: 20px;
-    margin-left: 1rem;
-  }
-}
 nav .nav-right .first input[type=text]:hover {
   background-color: #fff;
 }
@@ -300,7 +286,7 @@ body {
   color: #fff;
 }
 .type-food1 .bg-black1, .type-food1 .bg-black2, .type-food1 .bg-black3, .type-food1 .bg-black4, .type-food1 .bg-black5, .type-food2 .bg-black1, .type-food2 .bg-black2, .type-food2 .bg-black3, .type-food2 .bg-black4, .type-food2 .bg-black5, .type-food3 .bg-black1, .type-food3 .bg-black2, .type-food3 .bg-black3, .type-food3 .bg-black4, .type-food3 .bg-black5, .type-food4 .bg-black1, .type-food4 .bg-black2, .type-food4 .bg-black3, .type-food4 .bg-black4, .type-food4 .bg-black5, .type-food5 .bg-black1, .type-food5 .bg-black2, .type-food5 .bg-black3, .type-food5 .bg-black4, .type-food5 .bg-black5 {
-  background-color: rgba(0, 0, 0, 0.384);
+  background-color: rgba(18, 20, 20, 0.336);
 }
 .type-food1 .bg-black1 h2, .type-food1 .bg-black2 h2, .type-food1 .bg-black3 h2, .type-food1 .bg-black4 h2, .type-food1 .bg-black5 h2, .type-food2 .bg-black1 h2, .type-food2 .bg-black2 h2, .type-food2 .bg-black3 h2, .type-food2 .bg-black4 h2, .type-food2 .bg-black5 h2, .type-food3 .bg-black1 h2, .type-food3 .bg-black2 h2, .type-food3 .bg-black3 h2, .type-food3 .bg-black4 h2, .type-food3 .bg-black5 h2, .type-food4 .bg-black1 h2, .type-food4 .bg-black2 h2, .type-food4 .bg-black3 h2, .type-food4 .bg-black4 h2, .type-food4 .bg-black5 h2, .type-food5 .bg-black1 h2, .type-food5 .bg-black2 h2, .type-food5 .bg-black3 h2, .type-food5 .bg-black4 h2, .type-food5 .bg-black5 h2 {
   padding-bottom: 20px;
@@ -311,6 +297,7 @@ body {
 }
 .type-food1 .bg-black1, .type-food2 .bg-black1, .type-food3 .bg-black1, .type-food4 .bg-black1, .type-food5 .bg-black1 {
   padding: 20px 70px;
+  margin-right: 500px;
 }
 .type-food1 .bg-black1 h4, .type-food2 .bg-black1 h4, .type-food3 .bg-black1 h4, .type-food4 .bg-black1 h4, .type-food5 .bg-black1 h4 {
   margin-left: 35%;
@@ -334,13 +321,15 @@ body {
 }
 
 .type-food1 {
-  background: url(/images/kiten.webp);
+  background: url(/images/kiten1.webp);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .type-food2 {
-  background-color: #33c7ae;
+  background: url(/images/food1.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .type-food3 {
@@ -377,8 +366,9 @@ body {
 .link-foods .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #f0ecec;
   min-width: 160px;
+  border-radius: 15px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
@@ -389,7 +379,9 @@ body {
   display: block;
 }
 .link-foods .dropdown-content a:hover {
-  background-color: #f1f1f1;
+  border-radius: 8px;
+  background-color: #344D84;
+  color: #fff;
 }
 .link-foods .dropdown:hover .dropdown-content {
   display: block;
