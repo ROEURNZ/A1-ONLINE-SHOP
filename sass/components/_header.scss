@@ -1,7 +1,7 @@
 
 @import "./group-mixin";
 @import "./variables";
-
+@import "../mixin/responsive";
 
 body {
     background-color:white;
@@ -133,3 +133,4 @@ nav {
         }
     }
 }
+@include responsive ('tablet') {}
