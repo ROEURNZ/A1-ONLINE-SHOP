@@ -1,0 +1,60 @@
+@import "./components/header";
+
+.main-container{
+     margin-top: 120px;
+}
+.photo{
+    img{
+        width: 100%;
+    }
+}
+.link-brand {
+    width: 100%;
+    padding: 40px 0;
+    margin-left: 50px;
+    margin-right: 50px;
+
+    .dropdown {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        width: 90%;
+        .dropbtn {
+            color: black;
+            font-size: 30px;
+            width: 50%;
+
+        }
+        button{
+            background-color: #33A5D6;
+            width: 10%;
+            font-size: 18px;
+            font-weight:bold;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            a{
+               text-decoration: none;
+               color: #f0ecec;
+               
+            }
+
+        }
+    }
+
+}
+.group-Card{
+    height: 170vh;
+    width: 100%;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+
+}
+.group-Card .row-1,.group-card .row-2,.group-card .row-3 {
+    @include highlight-card;
+ 
+ 
+    
+ }
