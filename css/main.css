@@ -750,18 +750,7 @@ body {
   color: #fff;
   font-size: 15px;
   font-weight: 600;
-  border: 1px solid #FFD700;
-  background-color: #FFD700;
 }
-<<<<<<< HEAD
-.row-item1 .bottom .gp-button button a,
-.row-item2 .bottom .gp-button button a,
-.row-item3 .bottom .gp-button button a,
-.row-item4 .bottom .gp-button button a,
-.row-item5 .bottom .gp-button button a {
-  text-decoration: none;
-  color: #fff;
-=======
 @media screen and (max-width: 884px) {
   .row-item1 .bottom .gp-button button,
   .row-item2 .bottom .gp-button button,
@@ -775,7 +764,6 @@ body {
     font-size: 10px;
     font-weight: 600;
   }
->>>>>>> 6300d0ab65a0584731cf3c043cc96f88450f08d9
 }
 .row-item1 .bottom .gp-button button:hover,
 .row-item2 .bottom .gp-button button:hover,

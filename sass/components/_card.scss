@@ -342,18 +342,6 @@ body {
                 color: $white-color;
                 font-size: 15px;
                 font-weight: 600;
-<<<<<<< HEAD
-                border:1px solid $gold-color;
-                background-color:$gold-color;
-                a{
-                    text-decoration: none;
-                    color: $white-color;
-                }
-=======
-                border: 1px solid $gold-color;
-                background-color: $gold-color;
-
->>>>>>> 6300d0ab65a0584731cf3c043cc96f88450f08d9
             }
 
             @include responsive ('tablet') {
