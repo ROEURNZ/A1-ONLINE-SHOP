@@ -510,7 +510,7 @@ body {
 .brand-contents {
   position: relative;
   margin-top: 180px;
-  height: 600px;
+  height: 550px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -518,14 +518,13 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  background: rgba(214, 228, 229, 0.2509803922);
   z-index: 0;
 }
 
 .brand-context {
-  width: 415px;
-  height: 450px;
-  background: rgba(206, 232, 226, 0.5882352941);
+  width: 560px;
+  height: 480px;
+  background: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -533,9 +532,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -547,8 +546,8 @@ body {
 }
 .brand-context .top-products .brand-pic {
   height: 240px;
-  width: 96.9%;
-  padding-left: 18px;
+  width: 100%;
+  background: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -558,14 +557,15 @@ body {
   gap: 18px;
 }
 .brand-context .top-products .brand-pic .banner-pics {
-  height: 218px;
+  height: 220px;
+  margin-left: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   gap: 18px;
 }
 .brand-context .top-products .brand-pic .banner-pics img {
@@ -576,7 +576,7 @@ body {
           box-shadow: 5px 5px 25px 0px rgba(46, 61, 73, 0.379);
 }
 .brand-context .top-products .brand-pic .main-image {
-  width: 200px;
+  width: 450px;
   height: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -586,63 +586,174 @@ body {
           align-items: center;
 }
 .brand-context .top-products .brand-pic .main-image img {
-  width: 260px;
+  height: 220px;
+  width: 410px;
   border-radius: 12px;
   -webkit-box-shadow: 5px 5px 25px 0px rgba(62, 79, 93, 0.363);
           box-shadow: 5px 5px 25px 0px rgba(62, 79, 93, 0.363);
 }
 .brand-context .brand-detail {
   width: 100%;
-  height: 300px;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .brand-context .brand-detail .brand-content {
   margin-top: 6px;
   width: 100%;
-  height: 150px;
-  background: white;
+  height: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 .brand-context .brand-detail .brand-content .pre-scribe {
   padding: 15px;
-  height: 160px;
+  height: 100px;
   width: 35%;
 }
 .brand-context .brand-detail .brand-content .describe {
   padding: 15px;
-  height: 160px;
+  height: 100px;
   width: 65%;
   color: #9a5252;
 }
 .brand-context .brand-detail .brand-button {
   width: 100%;
-  height: 80px;
-  background: rgba(202, 118, 118, 0.7490196078);
+  height: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.brand-context .brand-detail .brand-button .brand-items {
-  height: 80px;
-  width: 50%;
-  background: #67d2cd;
-}
+.brand-context .brand-detail .brand-button .brand-items,
 .brand-context .brand-detail .brand-button .brand-customize {
-  height: 80px;
+  height: 60px;
   width: 50%;
-  background: #d89b9b;
+  background: #09daad;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 15px;
+  outline: none;
+}
+.brand-context .brand-detail .brand-button .brand-items button,
+.brand-context .brand-detail .brand-button .brand-customize button {
+  width: 120px;
+  height: 30px;
+  border-radius: 12px;
 }
 
 .brand-trending {
   width: 100%;
   height: 400px;
   background: rgba(94, 169, 110, 0.6588235294);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+.brand-trending section {
+  width: 90%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.brand-trending section .brand-card {
+  width: 90%;
+  height: 360px;
+  background: rgba(255, 79, 185, 0.2588235294);
+  border-radius: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.brand-trending section .brand-card .pre-image {
+  width: 100%;
+  height: 50%;
+  background: rgba(129, 127, 127, 0.1843137255);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.brand-trending section .brand-card .de-image {
+  background: rgba(152, 231, 243, 0.9764705882);
+  width: 100%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.brand-trending section .brand-card .de-image .cap-content {
+  width: 100%;
+  height: 70%;
+  background: #eb5e5e;
+}
+.brand-trending section .brand-card .de-image .product-describe {
+  height: 30%;
+  width: 100%;
+  background: teal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  outline: none;
+}
+.brand-trending section .brand-card .de-image .product-describe button {
+  width: 100px;
+  height: 35px;
+  border-radius: 8px;
+}
+.brand-trending section .brand-card .de-image .product-describe button a {
+  text-decoration: none;
 }
 
 .carousel-wrapper {
-  width: 520px;
-  height: 350px;
+  width: 530px;
+  height: 330px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -658,23 +769,24 @@ body {
 }
 
 .carousel-container {
-  width: 400px;
-  height: 250px;
+  width: 500px;
+  height: 300px;
   overflow: hidden;
   margin: 0 auto;
+  border-radius: 10px;
 }
 
 .carousel {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1200px;
+  width: 1500px;
   -webkit-animation: sliding 12s infinite;
           animation: sliding 12s infinite;
 }
 .carousel div {
-  width: 400px;
-  height: 250px;
+  width: 500px;
+  height: 300px;
   background-size: cover;
   background-position: center;
 }
@@ -699,20 +811,20 @@ body {
             transform: translateX(0);
   }
   35% {
-    -webkit-transform: translateX(-400px);
-            transform: translateX(-400px);
+    -webkit-transform: translateX(-500px);
+            transform: translateX(-500px);
   }
   65% {
-    -webkit-transform: translateX(-400px);
-            transform: translateX(-400px);
+    -webkit-transform: translateX(-500px);
+            transform: translateX(-500px);
   }
   70% {
-    -webkit-transform: translateX(-800px);
-            transform: translateX(-800px);
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
   }
   98% {
-    -webkit-transform: translateX(-800px);
-            transform: translateX(-800px);
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
   }
   100% {
     -webkit-transform: translateX(0);
@@ -726,20 +838,20 @@ body {
             transform: translateX(0);
   }
   35% {
-    -webkit-transform: translateX(-400px);
-            transform: translateX(-400px);
+    -webkit-transform: translateX(-500px);
+            transform: translateX(-500px);
   }
   65% {
-    -webkit-transform: translateX(-400px);
-            transform: translateX(-400px);
+    -webkit-transform: translateX(-500px);
+            transform: translateX(-500px);
   }
   70% {
-    -webkit-transform: translateX(-800px);
-            transform: translateX(-800px);
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
   }
   98% {
-    -webkit-transform: translateX(-800px);
-            transform: translateX(-800px);
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
   }
   100% {
     -webkit-transform: translateX(0);
