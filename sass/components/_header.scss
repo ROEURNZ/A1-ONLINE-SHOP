@@ -97,7 +97,6 @@ nav {
                     border-radius: 10px;
                     border: 1.5px solid #33A5D6;
                     background-color: $dark-blue;
-    
                 }
     
                 input[type=text]:hover {
@@ -133,4 +132,4 @@ nav {
         }
     }
 }
-@include responsive ('tablet') {}
+
