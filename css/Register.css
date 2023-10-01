@@ -44,11 +44,6 @@ nav .nav-left .logo img {
   display: flex;
   align-self: center;
 }
-@media screen and (max-width: 884px) {
-  nav .nav-left {
-    margin-left: 30px;
-  }
-}
 nav .nav-center {
   flex: 0.8;
   display: flex;
@@ -73,66 +68,57 @@ nav .nav-center ul li a:hover {
   color: #fff;
   background: #33A5D6;
 }
-@media screen and (max-width: 884px) {
-  nav .nav-center ul {
-    display: flex;
-    justify-content: start;
-    padding: 20px;
-  }
-}
-@media screen and (max-width: 884px) {
-  nav .nav-center {
-    display: flex;
-    align-items: start;
-    margin-left: 15rem;
-  }
-}
-nav .nav-right {
+
+.nav-right {
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
-nav .nav-right .first input[type=text] {
+.nav-right .first input[type=text] {
   padding: 10px 50px;
   border-radius: 10px;
   border: 1.5px solid #33A5D6;
   background-color: #CEF1F1;
 }
-nav .nav-right .first input[type=text]:hover {
+@media screen and (max-width: 884px) {
+  .nav-right .first input[type=text] {
+    display: none;
+  }
+}
+.nav-right .first input[type=text]:hover {
   background-color: #fff;
 }
-nav .nav-right .first .fa-search {
+.nav-right .first .fa-search {
   color: #33A5D6;
   margin-left: -2rem;
 }
-nav .nav-right .btn-group select {
+@media screen and (max-width: 884px) {
+  .nav-right .first {
+    margin-left: 10px;
+  }
+}
+.nav-right .btn-group select {
   padding: 5px 20px;
   font-size: 12px;
   border-radius: 8px;
   border: 1px solid #c9c8c8;
 }
-nav .nav-right .btn-group select:hover {
+.nav-right .btn-group select:hover {
   border: 1.5px solid #33A5D6;
 }
-nav .nav-right .btn-group .fa:hover {
+.nav-right .btn-group .fa:hover {
   color: #33A5D6;
-}
-@media screen and (max-width: 884px) {
-  nav .nav-right {
-    position: absolute;
-    display: flex;
-    margin-left: 10rem;
-    margin-top: 3rem;
-    padding: 10px;
-    width: 80%;
-  }
 }
 
 @media screen and (max-width: 884px) {
+  .nav-right {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 884px) {
   nav {
-    height: 6rem;
-    position: relative;
+    display: flex;
   }
 }
 body {
@@ -181,11 +167,6 @@ nav .nav-left .logo img {
   display: flex;
   align-self: center;
 }
-@media screen and (max-width: 884px) {
-  nav .nav-left {
-    margin-left: 30px;
-  }
-}
 nav .nav-center {
   flex: 0.8;
   display: flex;
@@ -210,66 +191,57 @@ nav .nav-center ul li a:hover {
   color: #fff;
   background: #33A5D6;
 }
-@media screen and (max-width: 884px) {
-  nav .nav-center ul {
-    display: flex;
-    justify-content: start;
-    padding: 20px;
-  }
-}
-@media screen and (max-width: 884px) {
-  nav .nav-center {
-    display: flex;
-    align-items: start;
-    margin-left: 15rem;
-  }
-}
-nav .nav-right {
+
+.nav-right {
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
-nav .nav-right .first input[type=text] {
+.nav-right .first input[type=text] {
   padding: 10px 50px;
   border-radius: 10px;
   border: 1.5px solid #33A5D6;
   background-color: #CEF1F1;
 }
-nav .nav-right .first input[type=text]:hover {
+@media screen and (max-width: 884px) {
+  .nav-right .first input[type=text] {
+    display: none;
+  }
+}
+.nav-right .first input[type=text]:hover {
   background-color: #fff;
 }
-nav .nav-right .first .fa-search {
+.nav-right .first .fa-search {
   color: #33A5D6;
   margin-left: -2rem;
 }
-nav .nav-right .btn-group select {
+@media screen and (max-width: 884px) {
+  .nav-right .first {
+    margin-left: 10px;
+  }
+}
+.nav-right .btn-group select {
   padding: 5px 20px;
   font-size: 12px;
   border-radius: 8px;
   border: 1px solid #c9c8c8;
 }
-nav .nav-right .btn-group select:hover {
+.nav-right .btn-group select:hover {
   border: 1.5px solid #33A5D6;
 }
-nav .nav-right .btn-group .fa:hover {
+.nav-right .btn-group .fa:hover {
   color: #33A5D6;
-}
-@media screen and (max-width: 884px) {
-  nav .nav-right {
-    position: absolute;
-    display: flex;
-    margin-left: 10rem;
-    margin-top: 3rem;
-    padding: 10px;
-    width: 80%;
-  }
 }
 
 @media screen and (max-width: 884px) {
+  .nav-right {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 884px) {
   nav {
-    height: 6rem;
-    position: relative;
+    display: flex;
   }
 }
 body {
@@ -1006,11 +978,6 @@ nav .nav-left .logo img {
   display: flex;
   align-self: center;
 }
-@media screen and (max-width: 884px) {
-  nav .nav-left {
-    margin-left: 30px;
-  }
-}
 nav .nav-center {
   flex: 0.8;
   display: flex;
@@ -1035,66 +1002,57 @@ nav .nav-center ul li a:hover {
   color: #fff;
   background: #33A5D6;
 }
-@media screen and (max-width: 884px) {
-  nav .nav-center ul {
-    display: flex;
-    justify-content: start;
-    padding: 20px;
-  }
-}
-@media screen and (max-width: 884px) {
-  nav .nav-center {
-    display: flex;
-    align-items: start;
-    margin-left: 15rem;
-  }
-}
-nav .nav-right {
+
+.nav-right {
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
-nav .nav-right .first input[type=text] {
+.nav-right .first input[type=text] {
   padding: 10px 50px;
   border-radius: 10px;
   border: 1.5px solid #33A5D6;
   background-color: #CEF1F1;
 }
-nav .nav-right .first input[type=text]:hover {
+@media screen and (max-width: 884px) {
+  .nav-right .first input[type=text] {
+    display: none;
+  }
+}
+.nav-right .first input[type=text]:hover {
   background-color: #fff;
 }
-nav .nav-right .first .fa-search {
+.nav-right .first .fa-search {
   color: #33A5D6;
   margin-left: -2rem;
 }
-nav .nav-right .btn-group select {
+@media screen and (max-width: 884px) {
+  .nav-right .first {
+    margin-left: 10px;
+  }
+}
+.nav-right .btn-group select {
   padding: 5px 20px;
   font-size: 12px;
   border-radius: 8px;
   border: 1px solid #c9c8c8;
 }
-nav .nav-right .btn-group select:hover {
+.nav-right .btn-group select:hover {
   border: 1.5px solid #33A5D6;
 }
-nav .nav-right .btn-group .fa:hover {
+.nav-right .btn-group .fa:hover {
   color: #33A5D6;
-}
-@media screen and (max-width: 884px) {
-  nav .nav-right {
-    position: absolute;
-    display: flex;
-    margin-left: 10rem;
-    margin-top: 3rem;
-    padding: 10px;
-    width: 80%;
-  }
 }
 
 @media screen and (max-width: 884px) {
+  .nav-right {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 884px) {
   nav {
-    height: 6rem;
-    position: relative;
+    display: flex;
   }
 }
 .cover_background {
@@ -1132,14 +1090,7 @@ nav .nav-right .btn-group .fa:hover {
 }
 @media screen and (max-width: 884px) {
   .cover_background h1 {
-    background-color: #959494;
-    border: 2px solid #fffafa;
-    padding: 5px;
-    font-size: 40px;
-    margin-bottom: -50px;
-    z-index: 1;
-    margin-top: 20px;
-    border-radius: 10px;
+    display: none;
   }
 }
 form {

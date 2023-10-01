@@ -52,14 +52,8 @@ nav {
             display: flex;
             align-self: center;
         }
-
     }
 
-    @include responsive ('tablet') {
-        .nav-left {
-            margin-left: 30px;
-        }
-    }
 
     .nav-center {
         flex: 0.8;
@@ -89,96 +83,79 @@ nav {
 
             }
         }
+    }
+
+}
+.nav-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+
+    .first {
+        input[type=text] {
+            padding: 10px 50px;
+            border-radius: 10px;
+            border: 1.5px solid #33A5D6;
+            background-color: $dark-blue;
+
+        }
 
         @include responsive ('tablet') {
-            ul {
-                display: flex;
-                justify-content: start;
-                padding: 20px;
+            input[type=text] {
+                display: none;
             }
         }
 
-    }
+        input[type=text]:hover {
+            background-color: $white-color;
+        }
 
-    @include responsive ('tablet') {
-        .nav-center {
-            display: flex;
-            align-items: start;
-            margin-left: 15rem;
+
+        .fa-search {
+            color: #33A5D6;
+            margin-left: -2rem;
+
+        }
+
+        @include responsive ('tablet') {
+            margin-left: 10px;
         }
     }
 
+    .btn-group {
+
+        select {
+            padding: 5px 20px;
+            font-size: 12px;
+            border-radius: 8px;
+            border: 1px solid #c9c8c8;
+        }
+
+        select:hover {
+            border: 1.5px solid #33A5D6;
+
+        }
+
+        .fa:hover {
+            color: #33A5D6;
+
+        }
+    }
+
+
+}
+
+@include responsive ('tablet') {
     .nav-right {
-        flex: 1;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-           
-              
-            .first{
-                input[type=text] {
-                    padding: 10px 50px;
-                    border-radius: 10px;
-                    border: 1.5px solid #33A5D6;
-                    background-color: $dark-blue;
-    
-                }
-    
-                input[type=text]:hover {
-                    background-color: $white-color;
-                }
-
-
-            .fa-search {
-                color: #33A5D6;
-                margin-left: -2rem;
-
-            }
-        }
-
-        .btn-group {
-
-            select {
-                padding: 5px 20px;
-                font-size: 12px;
-                border-radius: 8px;
-                border: 1px solid #c9c8c8;
-            }
-
-            select:hover {
-                border: 1.5px solid #33A5D6;
-
-            }
-
-            .fa:hover {
-                color: #33A5D6;
-
-            }
-        }
-
-
-    }
-
-    @include responsive ('tablet') {
-        .nav-right {
-            position: absolute;
-            display: flex;
-            margin-left: 10rem;
-            margin-top: 3rem;
-            padding: 10px;
-            width: 80%;
-        }
+        width: 300px;
     }
 }
 
 
-
-
-
 @include responsive ('tablet') {
     nav {
-        height: 6rem;
-        position: relative;
-
+        display: flex;
     }
 }
