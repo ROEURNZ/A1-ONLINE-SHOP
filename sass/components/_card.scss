@@ -8,6 +8,8 @@ body{
 }
 .type-food1,.type-food2,.type-food3,.type-food4,.type-food5 {
     height: 450px;
+    width: 100%;
+
     @include centered;
     flex-direction: column;
     margin-top: 110px;
@@ -128,6 +130,7 @@ body{
 }
 .group-card{
     height: 170vh;
+    width: 100%;
     margin-left: 50px;
     margin-right: 50px;
     margin-top: 20px;
@@ -198,7 +201,10 @@ body{
                 font-weight: 600;
                 border:1px solid $gold-color;
                 background-color:$gold-color;
-                
+                a{
+                    text-decoration: none;
+                    color: $white-color;
+                }
             }
         
             button:hover{

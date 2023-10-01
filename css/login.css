@@ -278,6 +278,7 @@ body {
 
 .type-food1, .type-food2, .type-food3, .type-food4, .type-food5 {
   height: 450px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -392,6 +393,7 @@ body {
 
 .group-card {
   height: 170vh;
+  width: 100%;
   margin-left: 50px;
   margin-right: 50px;
   margin-top: 20px;
@@ -499,6 +501,14 @@ body {
   font-weight: 600;
   border: 1px solid #FFD700;
   background-color: #FFD700;
+}
+.row-item1 .bottom .gp-button button a,
+.row-item2 .bottom .gp-button button a,
+.row-item3 .bottom .gp-button button a,
+.row-item4 .bottom .gp-button button a,
+.row-item5 .bottom .gp-button button a {
+  text-decoration: none;
+  color: #fff;
 }
 .row-item1 .bottom .gp-button button:hover,
 .row-item2 .bottom .gp-button button:hover,
