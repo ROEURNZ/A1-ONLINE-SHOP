@@ -1,4 +1,4 @@
-// @import "/sass/main.scss";
+
 @import "./group-mixin";
 @import "./variables";
 @import "./header";
@@ -6,28 +6,74 @@
 body{
     background-color:$dark-blue ;
 }
-.type-food {
-    height: 400px;
+.type-food1,.type-food2,.type-food3,.type-food4,.type-food5 {
+    height: 450px;
     @include centered;
     flex-direction: column;
-    background-color: #33c7ae;
-    margin-top: 70px;
-    h2 {
-        color: $white-color;
-        padding-bottom: 20px;
-        padding-right: 20%;
-        font-size: 40px;
+    margin-top: 110px;
+    color: $white-color;
+    .bg-black1,.bg-black2,.bg-black3,.bg-black4,.bg-black5{
+        background-color: rgba(18, 20, 20, 0.336);
+        h2{
+            padding-bottom: 20px;
+            font-size: 40px;
+        }
+        h4{
+            font-size: 18px;
+        }
+    }
+    .bg-black1{
+        padding: 20px 70px;
+        margin-right: 500px;
+        h4{
+            margin-left: 35%;
+        }
+    }
+    .bg-black2,.bg-black3,.bg-black4{
+        height: 20%;
+        width: 30%;
+        padding: 30px;
+        h4{
+            margin-left: 10%;
+        }
+    }
+    .bg-black5{
+        height: 20%;
+        width: 40%;
+        padding: 30px;
+        padding-left: 50px;
+        h4{
+            margin-left: 30%;
+        }
     }
 }
+.type-food1{
+    background: url(/images/kiten1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.type-food2{
+    background:url(/images/food1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.type-food3{
+    background-color: #33c7ae;
 
+}
+.type-food4{
+    background-color: #33c7ae;
+
+}
+.type-food5{
+    background-color: #33c7ae;
+
+}
 .link-foods {
     width: 100%;
     padding: 40px 0;
     margin-left: 50px;
-    // margin-top: 400px;
     margin-right: 50px;
-    // background-color: #c76933;
-    
 
     .dropdown {
         position: relative;
@@ -41,18 +87,16 @@ body{
             border: none;
             border-radius: 10px;
             cursor: pointer;
-            // position: fixed;
-            // z-index: 1;
-            // top: 7.5rem;
-            // margin-top:-20px;
+
         }
     }
 
     .dropdown-content {
         display: none;
         position: absolute;
-        background-color: #f9f9f9;
+        background-color: #f0ecec;
         min-width: 160px;
+        border-radius: 15px;
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         z-index: 1;
 
@@ -67,7 +111,11 @@ body{
     }
 
     .dropdown-content a:hover {
-        background-color: #f1f1f1
+        border-radius: 8px;
+        background-color:$black-blue;
+        color: $white-color;
+        
+
     }
 
     .dropdown:hover .dropdown-content {
@@ -79,22 +127,27 @@ body{
     }
 }
 .group-card{
-    height: 175vh;
+    height: 170vh;
     margin-left: 50px;
     margin-right: 50px;
     margin-top: 20px;
+
 }
 .group-card .row-1,.group-card .row-2,.group-card .row-3 {
    @include highlight-card;
+
+
    
 }
+
+
 .row-item1,
 .row-item2,
 .row-item3,
 .row-item4,
 .row-item5 {
     width:230px;
-    height:350px;
+    height:335px;
     display: flex;
     flex-direction: column;
     box-shadow: 0.2px 0.2px 8px 0.2px;
@@ -135,11 +188,13 @@ body{
             display: flex;
             gap: 20%;
             justify-content: space-around;
+            align-items: center;
             button{
-                padding: 0.5px 20px;
+                width: 70px;
+                height: 35px;
                 border-radius: 10px;
                 color: $white-color;
-                font-size: 20px;
+                font-size: 15px;
                 font-weight: 600;
                 border:1px solid $gold-color;
                 background-color:$gold-color;
@@ -152,7 +207,7 @@ body{
             
             }
             .icon-1{
-                font-size: 40px;
+                font-size: 35px;
                 color: $gold-color;
             }
 
